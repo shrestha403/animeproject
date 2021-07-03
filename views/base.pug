@@ -1,0 +1,20 @@
+doctype html 
+html
+    head
+        title Anime Site
+        block script
+        block style 
+    body
+        nav#navbar 
+            div#logo
+                img(src="../static/animelogo.png")
+            ul    
+                li #[a(href='/') Home]
+                li #[a(href='/news') News] 
+                li #[a(href='/popular') Popular]
+                li #[a(href='/about') About ]
+                li #[a(href='/contact') Contact]
+        block content
+        footer(class='footer')
+            p Copyright (c) Company 2021
+    

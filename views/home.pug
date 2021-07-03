@@ -1,0 +1,29 @@
+extends base.pug
+block script 
+        script (src='../static/index.js')
+block style 
+    style 
+        include ../static/style.css
+block content 
+    section#body
+        section#missionsection 
+            h1 My Missions
+            ul
+                li Kill your boring mood
+                li Meet your requirement 
+                li We support your timepassing 
+                li Fill you with latest anime
+        section#sponsorsection 
+            h1 Our Sponsers
+            div#sponserlogo
+                img(src="../static/sponser1.jpg")
+            div#sponserlogo
+                img(src="../static/sponser2.jpg")
+            div#sponserlogo
+                img(src="../static/sponser3.jpg")
+            div#sponserlogo
+                img(src="../static/sponser4.jpg")
+            div#sponserlogo
+                img(src="../static/sponser5.jpg") 
+        footer(class='footer')  
+                p Copyright (c) Company 2021

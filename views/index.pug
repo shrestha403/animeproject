@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+head
+    title dance 
+style 
+    include ../static/style.css
+body
+    nav#navbar 
+        div#logo
+            img(src="../static/animelogo.png")
+        ul    
+            li #[a(class='zoom',href='/home') Home]
+            li #[a(class='zoom',href='/news') News] 
+            li #[a(class='zoom',href='/popular') Popular]
+            li #[a(class='zoom',href='/about') About ]
+            li #[a(class='zoom',href='/contact') Contact]
+    section#missionsection 
+        h1 My Missions
+        ul
+         li Kill your boring mood
+         li Meet your requirement 
+         li We support your timepassing 
+         li Fill you with latest anime
+    section#sponsorsection 
+        h1 Our Sponsers
+        div#sponserlogo
+                img(src="../static/sponser1.jpg")
+        div#sponserlogo
+                img(src="../static/sponser2.jpg")
+        div#sponserlogo
+                img(src="../static/sponser3.jpg")
+        div#sponserlogo
+                img(src="../static/sponser4.jpg")
+        div#sponserlogo
+                img(src="../static/sponser5.jpg")   
+footer(class='footer')
+        p Copyright (c) Company 2021
+script 
+    include ../static/index.js

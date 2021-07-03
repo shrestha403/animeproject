@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+#navbar{
+    text-decoration: none;
+    display: flex;
+    background-color: rgb(10, 0, 10);
+
+   
+}
+#navbar ul {
+
+    display: flexbox;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 20px;
+
+
+}
+#navbar ul li{
+    display: inline-block;
+    font-size: medium;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: bisque;
+    font-size: 1.5em;
+    padding: 40px;
+}
+
+#navbar ul li a:hover{
+    text-decoration: none;
+    color: rgb(165, 16, 61); 
+}
+#missionsection{
+   height: 250px;
+    width: 50%;
+    background-color:rgba(218, 233, 212, 0.829);
+    margin-top: 400px;
+    bottom: 0px;
+    display: inline-flex;
+    flex-direction: column;
+    opacity: 0.75;
+}
+#missionsection ul li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #380210;
+    font-size: medium;
+}
+#missionsection h1{
+    font-size: 45px;
+    font-family: 'Creepster', cursive;
+    color: #fa081c;
+    margin-bottom: 0%;
+}
+#sponsorsection{
+   height: 250px;
+    width: 50%;
+    background-color:rgba(218, 233, 212, 0.829);
+    margin-top: 400px;
+    bottom: 0px;
+    display: inline-flex;
+    opacity: 0.75;
+    
+}
+
+
+#sponsorsection h1{
+    font-size: 45px;
+    font-family: 'Creepster', cursive;
+    color: #fa081c;
+    margin-bottom: 0%;
+    margin-right: -35%;
+
+}
+
+
+#logo{
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#sponserlogo
+{
+    display: inline-flex;
+    
+    
+;
+
+    
+}
+#sponsorsection div{
+    display: inline-flex;
+    padding-inline-end: 10%;
+    flex-direction: row;
+}
+#sponsorsection div img{
+    display: inline-flex;
+    height: 50px;
+    width: 50px;
+    opacity: 1;
+    flex-direction: row;
+    padding-top: 274%;
+    padding-left: 0%;
+}
+/*
+.zoom {
+  padding: 50px;
+ 
+  transition: transform .2s; //Animation 
+  width: 200px;
+  height: 200px;
+ 
+  
+}
+
+.zoom:hover {
+  transform: scale(1); // (100% zoom)
+   background-color: rgb(20, 3, 6);
+  
+}
+*/
+.footer{
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 1px;;
+            width: 100%;
+            text-align: center;
+            /* Height of the footer*/ 
+            height: 50px;
+            background: rgb(10, 0, 10);
+            color: bisque;
+            
+        
+}
+.footer p{
+    padding: 5px;
+}
+#body {
+
+    background-image:    url(../static/background.jpg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;    
+    margin-top: 2px;      
+    margin-left: 3px; 
+    margin-bottom: 1px;   /* optional, center the image */
+    height: 100%;
+}
+/*
+.background-img{
+    background: url(https://picsum.photos/200/300);
+    background-repeat: no-repeat;
+}
+*/
+
