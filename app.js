@@ -1,22 +1,23 @@
-const express=require('express');
-const pug =require('pug');
-const path=require('path');
-const fs=require('fs');
-const app=express();
-const port=8000;
+const express = require('express');
+const pug = require('pug');
+const path = require('path');
+const fs = require('fs');
+const app = express();
+var port = process.env.YOUR_PORT || process.env.PORT || 80;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
 
 
 //express specific 
-app.use('/static',express.static('static'));//serving static files
+app.use('/static', express.static('static'));//serving static files
 app.use(express.urlencoded());
 
 //pug specific 
-app.set('view engine','pug');
-app.set('views',path.join(__dirname,'views')); //set views directory
+app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, 'views')); //set views directory
 
 
 //end poits
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
     res.status(200).render('home.pug')
 
 });
@@ -41,9 +42,8 @@ app.get('/contact', (req, res) => {
 
 
 
-
-
+// for heruko only 
 //starting server
-app.listen(port, ()=>{
-    console.log("the application started sucessfully of port ${port}")
+app.listen(port, server_host, () => {
+    console.log("the application started sucessfully")
 });
